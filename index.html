@@ -37,8 +37,9 @@ h1,h2{
 
 p{
     text-align:center;
-    max-width:800px;
-    margin:auto;
+    max-width:850px;
+    margin:15px auto;
+    line-height:1.6;
 }
 
 /* ---------------- LOGO ANIMADO ---------------- */
@@ -92,7 +93,6 @@ p{
     color:#e8d29c;
 }
 
-/* PRECIO */
 .precio{
     font-size:22px;
     font-weight:bold;
@@ -100,7 +100,6 @@ p{
     margin:10px 0;
 }
 
-/* BOTÓN WHATSAPP */
 .boton{
     display:inline-block;
     margin-top:10px;
@@ -115,6 +114,29 @@ p{
 
 .boton:hover{
     background:#1ebe5d;
+}
+
+/* ---------------- SECCIÓN INFORMACIÓN ---------------- */
+.seccion{
+    background:rgba(0,0,0,0.70);
+    margin:40px 20px;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #e8d29c;
+}
+
+.lista{
+    max-width:900px;
+    margin:20px auto;
+    line-height:1.7;
+}
+
+.frase{
+    text-align:center;
+    font-style:italic;
+    font-size:18px;
+    margin-top:20px;
+    color:#e8d29c;
 }
 
 /* RESPONSIVE */
@@ -134,7 +156,12 @@ p{
 </div>
 
 <h1>Raíces Vivas</h1>
-<p>Cuidando tu cabello natural con ingredientes 100% naturales</p>
+<p><strong>Cuidando tu cabello natural</strong></p>
+
+<p>
+Raíces Vivas ofrece dos productos principales elaborados con ingredientes naturales, 
+libres de parabenos, sulfatos y siliconas.
+</p>
 
 <h2>Productos Naturales</h2>
 
@@ -143,27 +170,41 @@ p{
     <div class="producto-card">
         <img src="imagen1.jpg">
         <h3>Tónico Capilar de Romero</h3>
-        <p>Estimula el crecimiento y fortalece las raíces.</p>
-
+        <p>Estimula el crecimiento, fortalece raíces y mejora la circulación del cuero cabelludo.</p>
         <div class="precio">$$$$</div>
-
-        <a class="boton" 
-        href="https://wa.me/573234629922?text=Hola%20quiero%20comprar%20el%20Tónico%20Capilar%20de%20Romero" 
-        target="_blank">Comprar</a>
+        <a class="boton" href="https://wa.me/573234629922?text=Hola%20quiero%20comprar%20el%20Tónico%20Capilar%20de%20Romero" target="_blank">Comprar</a>
     </div>
 
     <div class="producto-card">
         <img src="imagen2.jpg">
         <h3>Aceite de Aguacate Capilar</h3>
-        <p>  Hidratación  profunda  y   brillo   natural.  </p>
-
+        <p>Hidrata profundamente, repara daños por calor y aporta brillo natural.</p>
         <div class="precio">$$$$</div>
-
-        <a class="boton" 
-        href="https://wa.me/573234629922?text=Hola%20quiero%20comprar%20el%20Aceite%20de%20Aguacate%20Capilar" 
-        target="_blank">Comprar</a>
+        <a class="boton" href="https://wa.me/573234629922?text=Hola%20quiero%20comprar%20el%20Aceite%20de%20Aguacate%20Capilar" target="_blank">Comprar</a>
     </div>
 
+</div>
+
+<!-- SOBRE NOSOTROS -->
+<div class="seccion">
+    <h2>Sobre Nosotros</h2>
+
+    <p>
+    Nació con el propósito de ofrecer productos naturales y eficaces para el cuidado del cabello,
+    inspirado en la necesidad de encontrar alternativas saludables frente al uso constante
+    de productos químicos agresivos que causan resequedad, caída y debilitamiento capilar.
+    </p>
+
+    <div class="lista">
+        <p>• Ingredientes 100% naturales</p>
+        <p>• Sin parabenos, sulfatos ni siliconas</p>
+        <p>• Cuidado profundo y saludable</p>
+        <p>• Inspirado en la naturaleza</p>
+    </div>
+
+    <div class="frase">
+        “Belleza, salud y naturaleza en perfecta armonía.”
+    </div>
 </div>
 
 </body>
