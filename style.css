@@ -1,86 +1,86 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f7f3;
-    color: #333;
+/* HERO */
+.hero{
+    position:relative;
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
+    color:white;
 }
 
-.hero {
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.video-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
 }
 
-.overlay {
-    background-color: rgba(0, 50, 0, 0.6);
-    padding: 40px;
-    text-align: center;
-    color: white;
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:-1;
 }
 
-.overlay h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.hero-content{
+    z-index:2;
 }
 
-.overlay p {
-    margin-bottom: 20px;
+.logo{
+    width:120px;
+    margin-bottom:15px;
 }
 
-.btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.3s;
+/* PRODUCTOS */
+.productos{
+    padding:60px 20px;
+    background:#f4f4f4;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+    justify-items:center;
 }
 
-.btn:hover {
-    background-color: #2e7d32;
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    width:100%;
+    max-width:300px;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 15px auto;
 }
 
-.productos {
-    background-color: #ffffff;
+.precio{
+    font-size:20px;
+    font-weight:bold;
+    color:#2e7d32;
 }
 
-.card {
-    background: #e8f5e9;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #2e7d32;
-}
-
-.nosotros {
-    background-color: #dcedc8;
-}
-
-.contacto {
-    background-color: #c8e6c9;
-}
-
-footer {
-    background-color: #1b5e20;
-    color: white;
-    text-align: center;
-    padding: 15px;
+@media(max-width:600px){
+    .logo{
+        width:90px;
+    }
 }
